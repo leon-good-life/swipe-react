@@ -33,12 +33,12 @@ SwipeReact.events = {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff > 0){
-          if(SwipeReact.configuration.hasOwnProperty('right')){
-            SwipeReact.configuration.right();
-          }
-        } else{
           if(SwipeReact.configuration.hasOwnProperty('left')){
             SwipeReact.configuration.left();
+          }
+        } else{
+          if(SwipeReact.configuration.hasOwnProperty('right')){
+            SwipeReact.configuration.right();
           }
         }
     } else {
