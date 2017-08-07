@@ -1,4 +1,9 @@
 # swipe-react
+[![npm version](https://badge.fury.io/js/swipe-react.svg)](http://badge.fury.io/js/swipe-react)
+
+[![NPM](https://nodei.co/npm/swipe-react.png)](https://nodei.co/npm/swipe-react/)
+
+
 Easy integration!!! Easily add touch devices support (smartphones, tablets) to your react components, with swipe direction detection.
 
 # Usage
