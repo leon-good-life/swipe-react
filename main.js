@@ -1,1 +1,1 @@
-module.exports = require('./SwipeReact');
+module.exports = require('./lib/SwipeReact');
