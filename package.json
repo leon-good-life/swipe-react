@@ -1,6 +1,6 @@
 {
   "name": "swipe-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy integration!!! Easily add touch devices support (smartphones, tablets) to your react components, with swipe direction detection.",
   "main": "main.js",
   "scripts": {
