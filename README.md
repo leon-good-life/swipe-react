@@ -37,3 +37,57 @@ Easy integration!!! Easily add touch devices support (smartphones, tablets) to y
 ```javascript
   <YourComponent {...SwipeReact.events} />
 ```
+
+# Example
+```javascript
+import React, { Component } from 'react';
+import SwipeReact from 'swipe-react';
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      content: 'Swipe here!'
+    };
+    SwipeReact.config({
+      left: () => {
+        this.setState({
+          content: 'left direction detected.'
+        });
+      },
+      right: () => {
+        this.setState({
+          content: 'right direction detected.'
+        });
+      },
+      up: () => {
+        this.setState({
+          content: 'up direction detected.'
+        });
+      },
+      down: () => {
+        this.setState({
+          content: 'down direction detected.'
+        });
+      }
+    });
+  }
+  render() {
+    let styles = {
+      height: '400px',
+      fontSize: '34px',
+      textAlign: 'center'
+    };
+    return (
+      <div {...SwipeReact.events} tabIndex="1" style={styles}>
+        {this.state.content}
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+### Remarks
+* You need to test it on a touch screen device, or open Smartphone/Tablet mode on Chrome Developer Tools.
